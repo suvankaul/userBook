@@ -22,18 +22,24 @@ class App extends Component{
   }
 
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users')
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    // .then(response => response.json())
+    // .then(data => {
+    //   console.log(data);
+    //   this.setState({users: data})
+    // })
+    fetch('https://randomuser.me/api/?results=100&nat=us')
     .then(response => response.json())
     .then(data => {
-      console.log(data);
-      this.setState({users: data})
+      console.log(data.results);
+      this.setState({users: data.results})
     })
   }
 
   render(){
-    const { users, searchText } = this.state;
+    const { users} = this.state;
     let filteredUsers = users.filter(user => {
-        return user.name.toLowerCase().indexOf(this.state.searchText.toLowerCase()) >= 0;
+        return user.name.title.toLowerCase().indexOf(this.state.searchText.toLowerCase()) >= 0 || user.name.first.toLowerCase().indexOf(this.state.searchText.toLowerCase()) >= 0 || user.name.last.toLowerCase().indexOf(this.state.searchText.toLowerCase()) >= 0;
     })
     return(
       <div className="App">
