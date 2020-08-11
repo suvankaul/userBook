@@ -1,6 +1,8 @@
 .App {
     text-align: center;
     background: #fcfcfc;
+    overflow: hidden;
+    height: 100%;
 }
 
 .App-logo {
@@ -31,6 +33,10 @@
 
 .bg-dark {
     background: #56677b !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 
