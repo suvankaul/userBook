@@ -31,6 +31,7 @@ class App extends Component{
     fetch('https://randomuser.me/api/?results=100&nat=us')
     .then(response => response.json())
     .then(data => {
+      data.results = data.results.map(resD => ({...resD, getDetails: false}))
       console.log(data.results);
       this.setState({users: data.results})
     })
