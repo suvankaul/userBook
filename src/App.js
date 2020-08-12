@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Navbar, Nav, Form } from 'react-bootstrap';
+import { Navbar, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import CardList from './components/card-list/CardList.component';
@@ -46,11 +46,11 @@ class App extends Component{
       <div className="App">
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="#home">User Book</Navbar.Brand>
-          <Nav className="mr-auto">
+          {/* <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Contact</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
+          </Nav> */}
           <Form inline>
             <SearchBox placeholder="Search user...." handleChange={this.searchUsers}></SearchBox>
           </Form>

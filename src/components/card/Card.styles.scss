@@ -5,11 +5,20 @@
     width: calc(25vw - 25px);
     /* width: 100%; */
     flex-direction: column;
+    @media screen and (max-width: 1076px) {
+        width: calc(33.3vw - 33px)
+    }
+    @media screen and (max-width: 770px) {
+        width: calc(50vw - 45px)
+    }
+    @media screen and (max-width: 450px) {
+        width: calc(100vw - 60px)
+    }
     /* flex-direction: row; */
     background-color: #ffffff;
     border: 1px solid #efefef;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 2px #efefef;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 1px #efefef;
     padding: 15px 10px;
     margin: 0 0 10px 10px;
     cursor: pointer;
@@ -36,19 +45,24 @@
             flex-direction: column;
             justify-content: flex-start;
             max-width: 75%;
-        }
-        .user-name {
-            color: #56677b;
-            font-weight: 600;
-            text-align: left;
-        }
-        .user-email {
-            color: #8095AA;
-            text-align: left;
-        }
-        .user-phone {
-            color: #8095AA;
-            text-align: left;
+            padding-right: 10px;
+            .user-name {
+                color: #56677b;
+                font-weight: 600;
+                text-align: left;
+            }
+            .user-email {
+                color: #8095AA;
+                text-align: left;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .user-phone {
+                color: #8095AA;
+                text-align: left;
+            }
         }
     }
     .card-body {

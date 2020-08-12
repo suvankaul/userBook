@@ -2,7 +2,8 @@
 //E.g. <Cardlist name="ggg">gggg</Cardlist> ---- here props.children = 'gggg'
 import React, {Component} from 'react';
 import './CardList.styles.css'
-import Cards from '../card/Card.component'
+import Cards from '../card/Card.component';
+
 class CardList extends Component{
     render(){
         console.log(this.props)

@@ -1,0 +1,100 @@
+.modal-content {
+    padding: 15px 20px;
+    .modal-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px 0;
+        border-bottom: 0;
+        .card-img {
+            width: 0 !important;
+            img {
+                border: 1px solid #efefef;
+                border-radius: 50%;
+                box-shadow: 2px 2px 2px #efefef;
+            }
+        }
+        .card-title {
+            font-size: 15px;
+            margin-bottom: 0;
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            max-width: 75%;
+            .user-name {
+                color: #56677b;
+                font-weight: 600;
+                text-align: left;
+            }
+            .user-email {
+                color: #8095AA;
+                text-align: left;
+            }
+            .user-phone {
+                color: #8095AA;
+                text-align: left;
+            }
+        }
+    }
+    .modal-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+        .card-container {
+            display: flex;
+            width: 49%;
+            flex-direction: column;
+            @media screen and (max-width: 1076px) {
+                width: calc(33.3vw - 33px)
+            }
+            @media screen and (max-width: 770px) {
+                width: calc(50vw - 45px)
+            }
+            @media screen and (max-width: 450px) {
+                width: calc(100vw - 60px)
+            }
+            /* flex-direction: row; */
+            background-color: #ffffff;
+            border: 1px solid #efefef;
+            border-radius: 0.2rem;
+            box-shadow: 1px 1px 1px #efefef;
+            // padding: 15px 10px;
+            padding:0;
+            margin: 0;
+            cursor: pointer;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            transition: transform 0.25 ease-out;
+            font-size: 13px;
+            .card-header {
+                padding: 5px 10px;
+                background: none;
+                color: #56677b;
+                font-weight: 600;
+            }
+            .card-body {
+                padding: 5px 10px;
+                color: #8095AA;
+            }
+        }
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 10px 0;
+        .close-btn {
+            padding: 5px 10px;
+            margin: 0;
+            background: #56677b;
+            color: #ffffff;
+            border: 1px solid #56677b;
+        }
+        .close-btn:hover {
+            margin: 0;
+            background: #ffffff;
+            color: #56677b;
+            border: 1px solid #56677b
+        }
+    }
+}
