@@ -1,0 +1,19 @@
+.no-data {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    .no-data-img {
+        // font-size: 20px;
+        color: #56677b;
+        .data-img {
+            width: 150px;
+        }
+    }
+    .no-data-text {
+        color: #8095aa;
+        font-size: 25px;
+    }
+}

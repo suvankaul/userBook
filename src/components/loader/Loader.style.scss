@@ -1,0 +1,15 @@
+.loader {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .loader-spin {
+        color: #56677b;
+    }
+    .loader-text {
+        padding-top: 10px;
+        color: #8095aa;
+    }
+    // margin-top: 200px;
+}

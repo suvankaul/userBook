@@ -3,9 +3,12 @@
     border: none;
     outline: none;
     padding: 5px 10px;
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
     border: 1px solid #efefef;
     border-radius: 0.2rem;
+    height: 30px;
+    font-size: 13px;
     /* box-shadow: 2px 2px 2px #efefef; */
 }
 

@@ -13,13 +13,13 @@ class Cards extends Component{
 
     showUserDetails = () => {
         this.setState({showUserDetailsFlag : true})
-        console.log(this.state)
+        // console.log(this.state)
     }
 
     hideUserDetails = (event) => {
         this.setState({showUserDetailsFlag: false})
         if(event) event.stopPropagation();
-        console.log(this.state)
+        // console.log(this.state)
     }
 
     formatUserName(user){
